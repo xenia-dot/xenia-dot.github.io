@@ -69,6 +69,7 @@ input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,164,100,.25)}
 .offer.main{border-color:var(--gold);box-shadow:0 8px 24px rgba(169,127,60,.14)}
 .offer h4{margin:0 0 4px;font-size:19px;font-weight:600;line-height:1.25}
 .offer p{margin:0 0 10px;font-size:15px;color:var(--ink)}
+.incl{list-style:none;margin:0 0 12px;padding:0}.incl li{position:relative;padding:5px 0 5px 22px;font-size:15px;color:var(--navy);border-top:1px solid #EFE6D4}.incl li:first-child{border-top:0}.incl li:before{content:"✦";position:absolute;left:0;top:5px;color:var(--gold);font-size:13px}
 .tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--gold);border-radius:20px;padding:3px 10px;margin-bottom:8px}
 .price{display:flex;align-items:baseline;gap:10px;margin:2px 0 12px}
 .price b{font-size:30px;font-weight:600;white-space:nowrap}
@@ -169,7 +170,14 @@ a{color:var(--navy)}
     <div class="offer main">
       <span class="tag">Готовый файл</span>
       <h4>Личный прогноз на 2027 год</h4>
-      <p>Персональный PDF на ваше имя: подробное описание года, прогноз на каждый из 12 месяцев, энергия месяца и график жизненных сил. Готовый прогноз — без личных комментариев.</p>
+      <p>Именной PDF, рассчитанный по вашей дате рождения. Готовый прогноз — без личных комментариев.</p>
+      <ul class="incl">
+        <li>ваш личный год: главная тема 2027 года, его сила и на что обращать внимание</li>
+        <li>как выстраивается ваш год: прогноз на каждый из 12 месяцев — с января по декабрь</li>
+        <li>энергия каждого месяца: график жизненных сил — где подъём, а где спад</li>
+        <li>подсказки на каждый месяц: когда действовать, а когда беречь себя</li>
+        <li>текст на ваше имя, в женском или мужском варианте, в красивом оформлении</li>
+      </ul>
       <div class="price"><b id="pPdf"></b><span>файл PDF · пришлю в течение суток</span></div>
       <a class="btn btn-navy act" data-k="pdf" data-ch="wa" href="#" target="_blank" rel="noopener">Получить прогноз в WhatsApp</a>
       <div class="row3"><a class="btn btn-ghost act" data-k="pdf" data-ch="tg" href="#" target="_blank" rel="noopener">Telegram</a><a class="btn btn-ghost act" data-k="pdf" data-ch="max" href="#" target="_blank" rel="noopener">МАКС</a></div>
@@ -225,7 +233,7 @@ a{color:var(--navy)}
 // ===== НАСТРОЙКИ (меняются здесь) =====
 const CFG = {
   Y: 2027,
-  price: { pdf: '2 500 ₽', cons: '7 500 ₽', mk: '5 000 ₽' },
+  price: { pdf: '3 500 ₽', cons: '7 500 ₽', mk: '5 000 ₽' },
   phone: '79659349287',
   tg: 'https://t.me/+79659349287',
   max: 'https://max.ru/u/f9LHodD0cOKJWuuf4cO8Z2Z2XVqI90KHVneWlLRVX3xVz4XyI-fA8EHjBUk',
